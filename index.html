@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipe Silva Campos | Desenvolvedor Fullstack .NET</title>
+    <meta name="description" content="Portfólio de Filipe Silva Campos - Especialista em construir sistemas robustos e escaláveis com C#, Blazor e arquitetura de software moderna.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-text">FS<span class="accent">C</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#stack" class="nav-link">Stack</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="sobre">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Filipe Silva Campos
+                        <span class="typing-cursor">|</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Desenvolvedor Fullstack .NET</h2>
+                    <p class="hero-description">
+                        Especialista em construir sistemas robustos e escaláveis com 
+                        <span class="highlight">C#</span>, 
+                        <span class="highlight">Blazor</span> e 
+                        <span class="highlight">arquitetura de software moderna</span>.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#zensaldo" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Ver Projeto Destaque
+                        </a>
+                        <a href="https://github.com/FilipeSilvaCampos" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="window-content">
+                            <pre><code><span class="code-keyword">public class</span> <span class="code-class">Developer</span>
+{
+    <span class="code-keyword">public string</span> Name { <span class="code-keyword">get</span>; } = 
+        <span class="code-string">"Filipe Silva Campos"</span>;
+    
+    <span class="code-keyword">public string[]</span> Skills => <span class="code-keyword">new</span>[]
+    {
+        <span class="code-string">".NET 8"</span>, <span class="code-string">"C#"</span>, <span class="code-string">"Blazor"</span>,
+        <span class="code-string">"DDD"</span>, <span class="code-string">"Clean Architecture"</span>
+    };
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="grid-pattern"></div>
+        </div>
+    </section>
+
+    <!-- ZenSaldo Section - Main Project Highlight -->
+    <section class="zensaldo-section" id="zensaldo">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-primary">Projeto em Foco</span>
+                <h2 class="section-title">
+                    💰 ZenSaldo - Gestão Financeira Evoluída
+                </h2>
+                <span class="badge badge-secondary">Base Balta.io | Versão Customizada & Refatorada</span>
+            </div>
+
+            <div class="zensaldo-content">
+                <div class="zensaldo-visual">
+                    <div class="mockup-container">
+                        <div class="laptop-mockup">
+                            <div class="laptop-screen">
+                                <div class="dashboard-preview">
+                                    <div class="dashboard-header">
+                                        <h3>Dashboard Financeiro</h3>
+                                        <div class="month-selector">Dezembro 2025</div>
+                                    </div>
+                                    <div class="dashboard-grid">
+                                        <div class="wallet-card">
+                                            <div class="card-icon">👛</div>
+                                            <div class="card-label">Carteira Pessoal</div>
+                                            <div class="card-value">R$ 5.430,00</div>
+                                        </div>
+                                        <div class="wallet-card">
+                                            <div class="card-icon">🏢</div>
+                                            <div class="card-label">Empresa</div>
+                                            <div class="card-value">R$ 12.850,00</div>
+                                        </div>
+                                        <div class="wallet-card">
+                                            <div class="card-icon">💳</div>
+                                            <div class="card-label">Cartão de Crédito</div>
+                                            <div class="card-limit">
+                                                <div class="limit-bar">
+                                                    <div class="limit-used" style="width: 65%"></div>
+                                                </div>
+                                                <div class="limit-text">R$ 3.250 / R$ 5.000</div>
+                                            </div>
+                                        </div>
+                                        <div class="chart-placeholder">
+                                            <div class="chart-bars">
+                                                <div class="bar" style="height: 70%"></div>
+                                                <div class="bar" style="height: 85%"></div>
+                                                <div class="bar" style="height: 60%"></div>
+                                                <div class="bar" style="height: 90%"></div>
+                                                <div class="bar" style="height: 75%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="laptop-base"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zensaldo-details">
+                    <h3 class="details-subtitle">Além do Básico: Resolvendo a Complexidade Financeira Real</h3>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">💳</div>
+                            <div class="feature-content">
+                                <h4>Gestão Avançada de Crédito</h4>
+                                <p>Lógica de fatura separada do fluxo de caixa e controle inteligente de limites</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">👛</div>
+                            <div class="feature-content">
+                                <h4>Múltiplas Carteiras (Wallets)</h4>
+                                <p>Consolidação de saldos de diferentes origens para visão financeira completa</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="architecture-block">
+                        <div class="architecture-header">
+                            <i class="fas fa-cubes"></i>
+                            <h4>Engenharia de Software & Arquitetura</h4>
+                        </div>
+                        <div class="architecture-content">
+                            <div class="architecture-item">
+                                <div class="arch-icon">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <div class="arch-text">
+                                    <strong>Domain Driven Design (DDD)</strong>
+                                    <p>Modelagem rica do domínio financeiro com separação clara de responsabilidades</p>
+                                </div>
+                            </div>
+                            <div class="architecture-item">
+                                <div class="arch-icon">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <div class="arch-text">
+                                    <strong>Notification Pattern</strong>
+                                    <p>Validações elegantes e tratamento robusto de erros em toda a aplicação</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-quality-tags">
+                            <span class="quality-tag">🎯 Código Limpo</span>
+                            <span class="quality-tag">🧪 Testável</span>
+                            <span class="quality-tag">🚀 Escalável</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack-section">
+                        <h5 class="tech-stack-title">Tech Stack do Projeto</h5>
+                        <div class="tech-logos">
+                            <div class="tech-logo" title=".NET 8">
+                                <i class="fas fa-code"></i>
+                                <span>.NET 8</span>
+                            </div>
+                            <div class="tech-logo" title="C#">
+                                <i class="fas fa-hashtag"></i>
+                                <span>C#</span>
+                            </div>
+                            <div class="tech-logo" title="Blazor WASM">
+                                <i class="fas fa-fire"></i>
+                                <span>Blazor</span>
+                            </div>
+                            <div class="tech-logo" title="MudBlazor">
+                                <i class="fas fa-palette"></i>
+                                <span>MudBlazor</span>
+                            </div>
+                            <div class="tech-logo" title="SQL Server">
+                                <i class="fas fa-database"></i>
+                                <span>SQL Server</span>
+                            </div>
+                            <div class="tech-logo" title="Entity Framework Core">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>EF Core</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Projects Section -->
+    <section class="other-projects" id="projetos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Landing Pages & Front-end Criativo</h2>
+                <p class="section-description">Projetos focados em UI/UX atraente e conversão</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image hamburger-bg" style="background-image: url('assets/images/StreetHeros.png');">
+                        <div class="project-overlay">
+                            <a href="https://filipesilvacampos.github.io/Hamburgueria/" class="project-link">Ver Projeto</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">UI Design & Conversão</span>
+                        <h3 class="project-title">Landing Page - Hamburgueria</h3>
+                        <p class="project-description">
+                            Design vibrante focado em fotos apetitosas e experiência de conversão otimizada para delivery.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image tourism-bg" style="background-image: url('assets/images/VitrinePasseios.png');">
+                        <div class="project-overlay">
+                            <a href="https://filipesilvacampos.github.io/VitrinePasseios/home.html" class="project-link">Ver Projeto</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">UX & Design Responsivo</span>
+                        <h3 class="project-title">Landing Page - Agência de Turismo</h3>
+                        <p class="project-description">
+                            Interface imersiva com belas fotos de destinos e foco total na experiência do usuário.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toolbox Section -->
+    <section class="toolbox" id="stack">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Toolbox & Habilidades</h2>
+                <p class="section-description">Tecnologias e ferramentas que domino</p>
+            </div>
+
+            <div class="toolbox-grid">
+                <div class="toolbox-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Backend
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>.NET 8</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>ASP.NET Core</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Entity Framework</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toolbox-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-laptop-code"></i>
+                        Frontend
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Blazor WASM</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>MudBlazor</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toolbox-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-cogs"></i>
+                        Arquitetura & Ferramentas
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-cubes"></i>
+                            <span>DDD</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Clean Architecture</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>SOLID</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-vial"></i>
+                            <span>Unit Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <h2 class="footer-title">Vamos Construir Algo Incrível Juntos?</h2>
+                    <p class="footer-description">
+                        Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades de fazer parte da sua visão.
+                    </p>
+                    <div class="footer-cta">
+                        <a href="https://wa.me/73998313527?text=Olá%20Filipe%2C%20gostaria%20de%20entrar%20em%20contato%20com%20você." class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Entre em Contato
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="social-links">
+                        <a href="https://github.com/FilipeSilvaCampos" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/FilipeSilvaCampos</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/filipe-campos-755316254/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:camposfilipe41@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                            <span>camposfilipe41@gmail.com</span>
+                        </a>
+                        <a href="https://wa.me/73998313527?text=Olá%20Filipe%2C%20gostaria%20de%20entrar%20em%20contato%20com%20você." class="social-link" aria-label="Whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>(73) 99831-3527</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Filipe Silva Campos. Desenvolvido com <span class="heart">❤️</span> e <span class="highlight">C#</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
